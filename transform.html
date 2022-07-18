@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform HTML5</title>
+    <style>
+        .container,.inner{
+            height: 175px;
+            width: 175px;
+            border: 3px solid lawngreen;
+        }
+        .container{
+            background-color: lightskyblue;
+        }
+        .inner{
+            background-color: lightcoral;
+            transform: translate(50px , 50px) scale(.58) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformer heading</h1>
+    <div class="box container">
+        <div class="inner box">Box no: 1</div>
+    </div>
+    <div class="box container">
+        <div class="inner box">Box no: 2</div>
+    </div>
+    <div class="box container">
+        <div class="inner box">Box no: 3</div>
+    </div>
+</body>
+</html>

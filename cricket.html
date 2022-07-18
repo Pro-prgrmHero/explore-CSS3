@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket play animation</title>
+    <script src="https://kit.fontawesome.com/4e6c12451b.js" crossorigin="anonymous"></script>
+    <style>
+        .field{
+            height: 514px;
+            width: 1200px;
+            border: 2px solid ;
+        }
+        .field:hover .bat{
+            transform: rotate(-65deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 200ms ease-in;
+        }
+        .ball{
+            color: greenyellow;
+            height: 50px;
+            width: 50px;
+            background-color: greenyellow;
+            border-radius: 25px;
+            position: relative;
+            left: 548px;
+            transition: transform 250ms ease-out 210ms;
+        }
+        .field:hover .ball{
+            transform: translate(598px , -198px);
+        }
+    </style>
+</head>
+<body>
+    <h2>Tap the box</h2>
+    <div class="field">
+        <img class="bat" src="./images/bat.png" alt="Player stick">
+        <div class="ball"><!----  ---- --> -.-.-.-<hr></div>
+    </div>
+</body>
+<footer>
+    <small><i class="fa-regular fa-copyright"></i> Mecha.Pro inc. copyright 2020-3000</small>
+</footer>
+</html>

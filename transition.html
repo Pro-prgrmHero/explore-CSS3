@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition effect HTML5 CSS3</title>
+    <style>
+        .box{
+            height: 90px;
+            width: 90px;
+            border: 5px double chartreuse;
+            background-color: mediumseagreen;
+            transition: width 598ms linear , height 1200ms linear, transform 1200ms;
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(175deg);
+            /* transition: 900ms; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Transition</h3>
+    </div>
+    <div class="box">
+        <h3>Transition</h3>
+    </div>
+    <div class="box">
+        <h3>Transition</h3>
+    </div>
+</body>
+</html>
